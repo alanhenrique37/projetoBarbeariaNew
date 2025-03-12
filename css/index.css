@@ -33,6 +33,7 @@ label.logo {
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+  font-family: 'Montserrat';
 }
 
 nav ul {
@@ -49,10 +50,11 @@ nav ul li {
 nav ul li a {
   color: rgb(0, 0, 0);
   font-size: 17px;
-  padding: 7px 13px;
+  padding: 7px 8px;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
+ 
   
 
 }
@@ -318,6 +320,18 @@ body {
   margin-top: 10px; /* Espaço entre o texto e a barra */
 }
 
+.titulo.second.ter::after {
+  content: "";
+  display: block;
+  width: 15%; /* Largura da barra vermelha */
+  height: 4px; /* Espessura da barra */
+  background-color: red; /* Cor da barra */
+  margin: 0 auto; /* Centraliza a barra */
+  margin-top: 10px; /* Espaço entre o texto e a barra */
+}
+
+
+
 
 
 .subtitulo {
@@ -360,6 +374,22 @@ body {
   margin-bottom: 20px;
   object-fit: cover;
 }
+
+.titulo.quar::after {
+  content: "";
+  display: block;
+  width: 35%; /* Largura da barra vermelha */
+  height: 4px; /* Espessura da barra */
+  background-color: red; /* Cor da barra */
+  margin: 0 auto; /* Centraliza a barra */
+  margin-top: 10px; /* Espaço entre o texto e a barra */
+  margin-bottom: 30px;
+}
+
+
+
+
+
 
 .servico-nome {
   font-size: 24px;
@@ -411,6 +441,24 @@ body {
     margin: 0 auto; /* Centraliza a barra */
     margin-top: 10px; /* Espaço entre o texto e a barra */
   }
+
+  .titulo.second.ter::after {
+    content: "";
+    display: block;
+    width: 40%; /* Largura da barra vermelha */
+    height: 4px; /* Espessura da barra */
+    background-color: red; /* Cor da barra */
+    margin: 0 auto; /* Centraliza a barra */
+    margin-top: 10px; /* Espaço entre o texto e a barra */
+  }
+
+
+
+
+
+  
+  
+  
   
 
   .servico {
@@ -418,3 +466,288 @@ body {
       margin-bottom: 30px;
   }
 }
+
+.servico-preco {
+  font-size: 1.2em;
+  color: #e74c3c; /* Cor destacada para o preço */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* Estilos para a seção de unidades */
+.unidades {
+  background-color: rgb(255, 255, 255);
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.titulosUnidades {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.h1Unidades {
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  display: inline;
+}
+
+.h1Unidades2 {
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.unidades-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.caixaUnidade {
+  background-color: #161616;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.titulo-unidades {
+  margin-bottom: 1rem;
+}
+
+.h2Unidade {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  display: inline;
+  font-weight: bold;
+}
+
+.h2Unidadep2 {
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.h2Unidadep2 i {
+  font-size: 1rem;
+  margin-left: 0.15rem;
+}
+
+.texto1Unidade {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.texto1Unidade i {
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  color: red;
+}
+
+.barra-unidades {
+  height: 3px;
+  background-color: #ff0000;
+  margin: 1rem 0;
+}
+
+.horario-unidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.texto2Unidade {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.texto2Unidade i {
+  margin-left: 0.55rem;
+  color: red;
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .h1Unidades, .h1Unidades2 {
+      font-size: 36px;
+  }
+
+  .caixaUnidade {
+      padding: 1.5rem;
+  }
+
+  .h2Unidade, .h2Unidadep2 {
+      font-size: 26px;
+  }
+
+  .texto1Unidade {
+      font-size: 1rem;
+  }
+
+  .texto2Unidade {
+      font-size: 0.9rem;
+  }
+
+  .botaoUnidade {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1Unidades, .h1Unidades2 {
+      font-size: 2rem;
+  }
+
+  .caixaUnidade {
+      padding: 1rem;
+  }
+
+  .h2Unidade, .h2Unidadep2 {
+      font-size: 25px;
+  }
+
+  .texto1Unidade {
+      font-size: 18px;
+  }
+
+  .texto2Unidade {
+      font-size: 18px;
+  }
+
+  .botaoUnidade {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+  }
+
+  .horario-unidade {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .botaoUnidade {
+      margin-top: 1rem;
+  }
+}
+
+
+@media (max-width: 320px){
+  .cta{margin-top: 8px;}
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff0000;
+  background-color: transparent;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff0000;
+  background-color: transparent;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .h1Banner {
+      font-size: 2.5rem;
+  }
+
+  .line {
+      font-size: 2rem;
+  }
+
+  .listNav {
+      display: none;
+  }
+
+  .equipe-container,
+  .cortesPromotion {
+      grid-template-columns: 1fr;
+  }
+
+  .about-content {
+      flex-direction: column;
+  }
+
+  .contact-content {
+      flex-direction: column;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      gap: 2rem;
+  }
+}
+
