@@ -16,6 +16,133 @@ a {
     text-decoration-line: none;
 }
 
+.aLogo {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header */
+header {
+  position: relative;
+  height: 90vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  margin-top: 70px;
+}
+
+header video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.h1Banner {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.line {
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.typing-animation {
+  animation: typing 4s steps(40) 1s infinite,
+             blink 500ms steps(40) infinite normal;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 16em }
+}
+
+@keyframes blink {
+  from { border-right-color: rgba(255, 255, 255, 0.75); }
+  to { border-right-color: transparent; }
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.btns {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btns:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+}
+
+.btns::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 200px;
+  height: 150px;
+  background-color: #fff;
+  
+  border-radius: 50%;
+  transition: all 0.7s;
+  z-index: -1;
+}
+
+.btns:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
 nav {
   background: #ffffff;
   height: 80px;
@@ -52,7 +179,7 @@ nav ul li a {
   font-size: 17px;
   padding: 7px 8px;
   border-radius: 3px;
-  text-transform: uppercase;
+
   text-decoration: none;
  
   
@@ -137,7 +264,7 @@ a:hover {
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+   
     text-decoration: none;
   }
 }
@@ -210,8 +337,8 @@ a:hover {
 }
 
 .cta-button:hover {
-  background-color: #ffffff;
-  color: rgb(255, 0, 0);
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 768px) {
@@ -413,15 +540,15 @@ body {
   font-size: 16px;
   text-decoration: none;
   border-radius: 10px;
-  text-transform: uppercase;
+ 
   font-family: 'Montserrat';
   transition: background-color 0.3s ease;
   font-weight: bold;
 }
 
 .botao-agendar:hover {
-  background-color: rgb(255, 255, 255);
-  color: #ff0000;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
   
 }
 
@@ -469,7 +596,7 @@ body {
 
 .servico-preco {
   font-size: 1.2em;
-  color: #e74c3c; /* Cor destacada para o preço */
+  color: #ff1900; /* Cor destacada para o preço */
   font-weight: bold;
   margin-top: 10px;
 }
@@ -571,6 +698,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: 8px;
 }
 
 .texto2Unidade {
@@ -751,3 +879,29 @@ footer {
   }
 }
 
+.ver-mais {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.botao-ver-mais {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.botao-ver-mais:hover {
+  background-color: #555;
+}
+
+
+
+
+.botao-agendar.terceiro:hover{
+background-color: #ffffff;
+color: #000;
+}

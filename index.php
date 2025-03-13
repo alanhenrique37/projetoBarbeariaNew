@@ -24,10 +24,11 @@
       <i class="fas fa-bars"></i>
     </label>
     <!-- Site logo -->
-    <label class="logo">Neguinho Corts</label>
+    
+   <label class="logo"> <a href="index.php" class="aLogo">Neguinho Corts</a></label>
     <!-- Navigation links -->
     <ul>
-      <li><a class="active" href="#">Home</a></li>
+      <li><a class="active" href="#">Página Principal</a></li>
       <li><a href="#">Login/Cadastrar</a></li>
       <li><a href="#">Sou Funcionário</a></li>
     </ul>
@@ -35,16 +36,22 @@
 
 
 
-  <section class="cta" style="margin: bottom 30px;">
-    <div class="cta-logo">
-        <img src="images/certa.png" alt="Logo da Barbearia" class="imgbanner"/> <!-- Substitua 'logo.png' pelo caminho da sua logo -->
-    </div>
-    <div class="cta-content">
-        <h2>Transforme seu visual com a melhor barbearia da cidade!</h2>
-        <p>Agende já o seu corte e sinta a diferença. Nosso time de profissionais está esperando por você!</p>
-        <a href="#agendar" class="cta-button">Agendar Agora</a>
-    </div>
-</section>
+  <header>
+        <div class="overlay">
+            <h1 class="h1Banner">Seja Bem-vindo ao</h1>
+            <p class="line typing-animation">Neguinho Corts</p>
+            <div class="buttons">
+                <a href="https://booksy.com/pt-br/instant-experiences/widget/247164,309667" target="_blank"><button class="botao-agendar">AGENDAR</button></a>
+                <a href="#equipe"><button class="botao-agendar">QUEM SOMOS</button></a>
+            </div>
+            <video playsinline autoplay muted loop>
+                <source src="videos/corteVideos.mp4" type="video/mp4" alt="">
+            </video>
+        </div>
+</header>
+
+
+
 
 <section class="servicos" id="servicos">
     <div class="container">
@@ -79,8 +86,14 @@
                 <a href="#agendar" class="botao-agendar">Agendar</a>
             </div>
         </div>
+        
+        <!-- Botão "Ver Mais" -->
+        <div class="ver-mais">
+            <a href="#todos-servicos" class="botao-agendar second">Ver Mais</a>
+        </div>
     </div>
 </section>
+
 
 
 
@@ -110,16 +123,12 @@
               <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="images/renato.jpg" alt="Renato">
             </a>
             <figcaption>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                <path d="M8 5.5a2.5 2.5 0=" />
-              </svg>
-              <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Ver Mais</h4>
+              
             </figcaption>
           </figure>
           <div class="card-body border bg-white p-4">
             <h2 class="card-title h4 fw-bold mb-3">Renato</h2>
-            <p class="card-text text-secondary">Renato é barbeiro há mais de 10 anos e tem uma habilidade única em criar estilos modernos e clássicos. Ele é conhecido pela sua dedicação em oferecer cortes precisos e um atendimento excepcional.</p>
+            <p class="card-text text-secondary">Renato é o cara por trás da barbearia Neguinho Corts e, além de ser dono, manda muito bem como barbeiro. Com mais de 8 anos de experiência, ele tem aquele toque especial que só quem entende do assunto tem. É super gente boa, sempre de boas e com aquela vibe que faz a galera se sentir em casa. Se você quer um corte afiado e uma boa conversa, o Renato é o cara!</p>
           </div>
           <div class="card-footer border border-top-0 bg-white p-4">
             <ul class="nav mb-0 bsb-nav-sep">
@@ -134,7 +143,7 @@
             </ul>
             <div class="d-flex justify-content-between mt-3">
               <a href="#agendar" class="btn btn-dark">Agendar com Renato</a>
-              <a href="https://www.instagram.com/renato" class="btn btn-outline-danger d-flex align-items-center">
+              <a href="https://www.instagram.com/neguinho_corts01" target="_blank" class="btn btn-outline-danger d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                   <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.335 2.667 2.667 0 0 1 0-5.335z" />
                 </svg>
@@ -153,16 +162,12 @@
               <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="images/jp.jpg" alt="João">
             </a>
             <figcaption>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                <path d="M8 5.5a2.5 2.5 0=" />
-              </svg>
-              <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Ver Mais</h4>
+             
             </figcaption>
           </figure>
           <div class="card-body border bg-white p-4">
-            <h2 class="card-title h4 fw-bold mb-3">João</h2>
-            <p class="card-text text-secondary">João tem mais de 5 anos de experiência em cortes clássicos e penteados modernos. Seu talento e criatividade o tornaram um dos barbeiros mais requisitados.</p>
+            <h2 class="card-title h4 fw-bold mb-3">João Pedro</h2>
+            <p class="card-text text-secondary">JP é aquele barbeiro que sabe o que faz! Com um talento de sobra e um olhar afiado para os detalhes, ele transforma qualquer corte em uma obra de arte. Super tranquilo e descontraído, ele é o cara ideal pra quem busca um corte top e uma experiência relaxante. Se liga no JP, porque com ele, o estilo é garantido!</p>
           </div>
           <div class="card-footer border border-top-0 bg-white p-4">
             <ul class="nav mb-0 bsb-nav-sep">
@@ -177,7 +182,7 @@
             </ul>
             <div class="d-flex justify-content-between mt-3">
               <a href="#agendar" class="btn btn-dark">Agendar com João</a>
-              <a href="https://www.instagram.com/joao" class="btn btn-outline-danger d-flex align-items-center">
+              <a href="https://www.instagram.com/jotaap_corts" target="_blank" class="btn btn-outline-danger d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                   <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.335 2.667 2.667 0 0 1 0-5.335z" />
                 </svg>
@@ -196,16 +201,12 @@
               <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="images/br.jpg" alt="Marcos">
             </a>
             <figcaption>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
-                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                <path d="M8 5.5a2.5 2.5 0=" />
-              </svg>
-              <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Ver Mais</h4>
+              
             </figcaption>
           </figure>
           <div class="card-body border bg-white p-4">
-            <h2 class="card-title h4 fw-bold mb-3">Marcos</h2>
-            <p class="card-text text-secondary">Marcos é o barbeiro especializado em cortes precisos e estilos modernos. Ele traz uma combinação de criatividade e técnica em cada corte que faz.</p>
+            <h2 class="card-title h4 fw-bold mb-3">Bryan</h2>
+            <p class="card-text text-secondary">Bryan é aquele barbeiro que manda muito bem nos cortes e ainda deixa o ambiente super tranquilo. Ele tem um estilo todo próprio e faz cada corte de um jeito único, deixando os clientes sempre satisfeitos. Além disso, é super gente boa, sempre com uma vibe legal e um sorriso no rosto. Se você quer um corte diferente e feito com aquele toque especial, o Bryan é o cara!</p>
           </div>
           <div class="card-footer border border-top-0 bg-white p-4">
             <ul class="nav mb-0 bsb-nav-sep">
@@ -219,8 +220,8 @@
               </li>
             </ul>
             <div class="d-flex justify-content-between mt-3">
-              <a href="#agendar" class="btn btn-dark">Agendar com Marcos</a>
-              <a href="https://www.instagram.com/marcos" class="btn btn-outline-danger d-flex align-items-center">
+              <a href="#agendar" class="btn btn-dark">Agendar com Bryan</a>
+              <a href="https://www.instagram.com/bryan__corts" target="_blank" class="btn btn-outline-danger d-flex align-items-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                   <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.335 2.667 2.667 0 0 1 0-5.335z" />
                 </svg>
@@ -257,7 +258,7 @@
                             Segunda à Sexta 10h às 20h<br>
                             Sábado das 09h às 18h
                         </p>
-                        <a href="#agendar" class="botao-agendar">Agendar</a>
+                        <a href="#agendar" class="botao-agendar terceiro">Agendar</a>
                     </div>    
                 </div>
                 
@@ -275,7 +276,7 @@
                             Segunda à Sexta 10h às 20h<br>
                             Sábado das 09h às 18h 
                         </p>
-                        <a href="#agendar" class="botao-agendar">Agendar</a>
+                        <a href="#agendar" class="botao-agendar terceiro">Agendar</a>
                     </div>    
                 </div>
             </div>
@@ -306,28 +307,28 @@
               <div class="col-12 col-sm-6">
                 <div class="card border-0 border-bottom border-danger shadow-sm mb-4">
                   <div class="card-body text-center p-4 p-xxl-5">
-                    <h3 class="display-2 fw-bold mb-2">60</h3>
-                    <p class="fs-5 mb-0 text-secondary">Finished Projects</p>
+                    <h3 class="display-2 fw-bold mb-2">5+</h3>
+                    <p class="fs-5 mb-0 text-secondary">Anos de Empresa</p>
                   </div>
                 </div>
                 <div class="card border-0 border-bottom border-danger shadow-sm">
                   <div class="card-body text-center p-4 p-xxl-5">
-                    <h3 class="display-2 fw-bold mb-2">18k+</h3>
-                    <p class="fs-5 mb-0 text-secondary">Issues Solved</p>
+                    <h3 class="display-2 fw-bold mb-2">3k+</h3>
+                    <p class="fs-5 mb-0 text-secondary">Cabelos Cortados</p>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6">
                 <div class="card border-0 border-bottom border-danger shadow-sm mt-lg-6 mt-xxl-8 mb-4">
                   <div class="card-body text-center p-4 p-xxl-5">
-                    <h3 class="display-2 fw-bold mb-2">10k+</h3>
-                    <p class="fs-5 mb-0 text-secondary">Happy Customers</p>
+                    <h3 class="display-2 fw-bold mb-2">2</h3>
+                    <p class="fs-5 mb-0 text-secondary">Unidades</p>
                   </div>
                 </div>
                 <div class="card border-0 border-bottom border-danger shadow-sm">
                   <div class="card-body text-center p-4 p-xxl-5">
-                    <h3 class="display-2 fw-bold mb-2">78</h3>
-                    <p class="fs-5 mb-0 text-secondary">Awwwards</p>
+                    <h3 class="display-2 fw-bold mb-2">5+</h3>
+                    <p class="fs-5 mb-0 text-secondary">Funcionários</p>
                   </div>
                 </div>
               </div>
@@ -350,21 +351,21 @@
                 </div>
                 <div class="footer-links">
                     <ul>
-                        <li><a href="#equipe">Equipe</a></li>
-                        <li><a href="#nossosCortes">Serviços</a></li>
-                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#quemSomos">Quem Somos</a></li>
                         <li><a href="#unidades">Unidades</a></li>
+                        <li><a href="#unidades">Nossos Números</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
                 
-                    <a href="https://www.instagram.com/neguinhocorts_/#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/neguinho_corts01"  aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                   
-                    <a href="https://w.app/nRWpYI" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/5511985220433?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20agendamento!" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Neguinho Corts. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Neguinho Corts. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
