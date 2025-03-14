@@ -29,9 +29,9 @@
     <!-- Navigation links -->
     <ul>
       <li><a class="active" href="#">Página Principal</a></li>
-      <li><a href="login.php">Login</a></li>
-      <li><a href="cadastro.php">Cadastrar</a></li>
-      <li><a href="#">Sou Funcionário</a></li>
+      <li><a href="login.php">Agendar</a></li>
+      <li><a href="sair.php" >Sair</a></li>
+     
     </ul>
   </nav>
 

@@ -584,7 +584,7 @@ body {
 
 
   
-  
+
   
   
 
@@ -659,6 +659,13 @@ body {
   display: inline;
   font-weight: bold;
 }
+
+.botao-cadastro {
+  color:white;
+  background-color: #000;
+}
+
+
 
 .h2Unidadep2 {
   color: red;
